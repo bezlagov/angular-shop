@@ -1,0 +1,84 @@
+
+/*feature*/
+.feature__content {
+    width: 785px;
+    text-align: center;
+    margin: 0 auto;
+
+    margin-bottom: 90px;
+}
+
+.feature__title {
+    margin: 25px;
+}
+
+.feature__images {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature__image__item {
+    position: relative;
+    padding-top: 35px;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.feature__image__item--blue {
+    background-color: #4eb9f4;
+}
+
+.feature__image__item--green {
+    background-color: #6fc125;
+}
+
+.feature__image__item--red {
+    background-color: #ff5649;
+}
+
+.feature__image__item--orange {
+    background-color: #e48f23;
+}
+
+.feature_item-image {
+    color: #fff;
+    font-size: 75px;
+    opacity: 1;
+    transition: opacity 0.4s linear;
+}
+
+.feature_item-text {
+    color: #fff;
+    font-size: 17px;
+    opacity: 1;
+    transition: opacity 0.4s linear;
+    line-height:6;
+}
+
+.feature-addition-info {
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    width: 80%;
+    top: 50px;
+    left: 20px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s linear;
+}
+
+.feature__image__item:hover .feature-addition-info {
+    opacity: 1;
+
+}
+
+.feature__image__item:hover .feature_item-image {
+    opacity: 0.2;
+}
+
+.feature__image__item:hover .feature_item-text {
+    opacity: 0.2;
+}

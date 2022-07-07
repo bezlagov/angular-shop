@@ -1,0 +1,72 @@
+
+/*header*/
+.header__logo {
+    font-family: Lavanderia;
+    font-size: 41px;
+    color: #000;
+}
+
+.logo__pink {
+    color: #b73958;
+}
+
+.top-bar {
+    background-color: #fff;
+    opacity: 0.9;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.11);
+}
+
+.inner-top-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/*menu*/
+/*menu*/
+.menu {
+    display: flex;
+}
+
+.menu__item {
+    margin-left: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #454545;
+    font-size: 17px;
+    transition: color .2s linear;
+}
+
+.menu__item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    color: #b73958;
+}
+
+.menu__item--login {
+    width: 90px;
+    height: 30px;
+    background-color: #de6d6e;
+    text-align: center;
+    color: #fff;
+    line-height: 100%;
+    transition: background-color .2s linear;
+    border-radius: 5px;
+}
+
+.menu__item--login a {
+    line-height: 25px;
+    margin-left: 5px;
+
+}
+
+.menu__item--login:hover {
+    background-color: #b73958;
+    color: #fff;
+}

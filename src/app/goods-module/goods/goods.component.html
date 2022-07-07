@@ -1,0 +1,16 @@
+<div class="container">
+    <div>
+        <button class="filtration" (click)="setAsc();">ASC</button>
+        <button class="filtration" (click)="setDesc();">DESC</button>
+    </div>
+    <section class="section__blog">
+        <div class="blog__item" *ngFor="let product of products">
+            <div class="blog__image"><img src="{{product.image}}" alt=""></div>
+            <div class="blog__content">
+                <div class="blog__title">{{product.title}}</div>
+                <div class="blog__text">{{product.description}}</div>
+                <div class="menu__item menu__item--login"><a [routerLink]="'../product'" [queryParams]="{id:product.id}">Details</a></div>
+            </div>
+        </div>
+    </section>
+</div>

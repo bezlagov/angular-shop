@@ -1,0 +1,15 @@
+<div class="top-bar">
+    <div class="container">
+        <div class="inner-top-bar">
+            <div class="header__logo">Super<span class="logo__pink"> store</span></div>
+            <nav class="menu">
+                <div class="menu__item" *ngFor="let item of menuItems"><a [routerLink]="'goods/'+[item]">{{item}}</a>
+                </div>
+                <div class="menu__item menu__item--login" (click)="onOpenAuth();"><a>Login</a>
+                </div>
+                <div class="menu__item menu__item--login" (click)="onOpenCart();"><a>Cart</a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>

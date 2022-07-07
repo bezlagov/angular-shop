@@ -1,0 +1,24 @@
+.header__content {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    left: 0;
+    bottom: 80px;
+    z-index: 1;
+}
+
+.header__title {
+    color: #fff;
+    font-family: AlteHaasGrotesk;
+    font-size: 67px;
+    font-weight: 700;
+    text-shadow: 0 0 13px rgba(0, 0, 0, 0.22);
+}
+
+.header__text {
+    color: #fff;
+    font-family: UniversalLT;
+    font-size: 25px;
+    font-weight: 300;
+    text-shadow: 0 0 13px rgba(0, 0, 0, 0.22);
+}

@@ -1,0 +1,22 @@
+<div class="cart" *ngIf="getStatus()">
+    <div class="cart-popup">
+        <div class="cart-header">
+            <h2>Cart</h2>
+            <button (click)="onClose();">X</button>
+        </div>
+        <div class="login-block">
+            <label>Login:
+                <input #log type="text" placeholder="Login">
+            </label>
+            <label>Password:
+                <input #pas type="password" placeholder="password" />
+            </label>
+            <label>is correct:
+                <input #correct type="checkbox"  />
+            </label>
+        </div>
+        <div class="footer">
+            <button class="login-button" (click)="onSubmit(log.value, pas.value, correct.checked)">Login</button>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,65 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "UniversalLT";
+    src: url("../src/assets/fonts/Univers LT 45 Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "AlteHaasGrotesk";
+    src: url("../src/assets/fonts/7fonts.ru_AlteHaasGroteskBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+
+body {
+    background-color: #fff;
+    margin: 0;
+    font-family: UniversalLT;
+    font-size: 14px;
+    font-weight: 300;
+    color: #8b8b8b;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+hr {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e9e9e9;
+    border: 0;
+    margin: 40px 0;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.header {
+    background: url("../src/assets/images/bg.jpg") center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+footer {
+    background-color: #2a272b;
+    width: 100%;
+    height: 261px;
+    box-shadow: 0 -5px 5px 0 rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,25 @@
+<div class="cart" *ngIf="getStatus()">
+    <div class="cart-popup">
+        <div class="cart-header">
+            <h2>Cart</h2>
+            <button (click)="onClose();">X</button>
+        </div>
+        <div class="cart-content">
+            <div class="cart-item" *ngFor="let item of products; let i = index;">
+                <p class="item-count">{{i}}.</p>
+                <p class="item-title">{{item.title}}</p>
+                <div class="count">
+                    <button (click)="onClickMinus(item.id);">-</button>
+                    <input type="text" value="{{item.count}}" disabled>
+                    <button (click)="onClickPlus(item.id);">+</button>
+                </div>
+
+                <p class="item-price">{{item.price*item.count| currency}}</p>
+            </div>
+        </div>
+        <div class="popup-footer">
+            <p>Total price: {{totalPrice |currency}}</p>
+            <button (click)="onBuy();">Buy</button>
+        </div>
+    </div>
+</div>

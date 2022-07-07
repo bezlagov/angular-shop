@@ -1,0 +1,34 @@
+.footer__block {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__column {
+
+    width: 13%;
+}
+
+.footer_title {
+    margin: 35px 0 15px 0;
+    font-size: 21px;
+    color: #aeaeae;
+}
+
+.footer_text {
+    font-size: 15px;
+    color: #8b8b8b;
+    margin-bottom: 5px;
+}
+
+.footer_text a {
+    color: inherit;
+    text-decoration: none;
+    transition: color .2s linear;
+}
+
+.footer_text a:hover {
+    text-decoration: underline;
+    color: lightcoral;
+}

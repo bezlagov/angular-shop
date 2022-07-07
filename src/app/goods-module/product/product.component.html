@@ -1,0 +1,9 @@
+<div class="container product-block">
+    <img class="product-image" src={{product.image}}>
+    <div class="product-data">
+        <h2>{{product.title}}</h2>
+        <p class="product-price">{{product.price|currency}}</p>
+        <p class="product-description">{{product.description}}</p>
+    </div>
+    <button (click)="onBuyClick(product)" class="product-button">Add</button>
+</div>
